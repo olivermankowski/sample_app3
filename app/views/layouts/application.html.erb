@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<meta name="google-site-verification" content="lq8wiht5B76as2V2623_lGg9jn8Q3LjCLN_shC66Tbs" />
+    <title><%= title %></title>
+    <%= csrf_meta_tag %>
+    <%= render 'layouts/stylesheets' %>
+  </head>
+  <body>
+    <div class="container">
+      <%= render 'layouts/header' %>
+      <section class="round">
+        <%= yield %>
+      </section>
+	<%= render 'layouts/footer'%>
+    </div>
+
+  </body>
+</html>
